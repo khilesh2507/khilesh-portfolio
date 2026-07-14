@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+:root {
+  --clr-parchment: #F8F6F2;
+  --clr-ink: #0A0A0A;
+  --clr-muted: #6B6B6B;
+  --clr-faint: #ADADAD;
+  --clr-divider: #E0DDD8;
+}
+
+@theme inline {
+  --color-parchment: var(--clr-parchment);
+  --color-ink: var(--clr-ink);
+  --color-muted: var(--clr-muted);
+  --color-faint: var(--clr-faint);
+  --color-divider: var(--clr-divider);
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-cormorant);
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #F8F6F2;
+}
+
+body {
+  background-color: #F8F6F2;
+  color: #0A0A0A;
+  font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: #0A0A0A;
+  color: #F8F6F2;
+}
+
+/* Prevent FOUC for fonts */
+.font-serif {
+  font-family: var(--font-cormorant), Georgia, 'Times New Roman', serif;
+}
+
+/* Refined ligatures and features for serif display text */
+.display-serif {
+  font-family: var(--font-cormorant), Georgia, serif;
+  font-feature-settings: "liga" 1, "kern" 1, "onum" 1;
+}
