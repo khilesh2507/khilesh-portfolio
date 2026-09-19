@@ -169,9 +169,9 @@ const ENTRIES: Entry[] = [
     summary:
       "At ZBULLET, I got to see what happens when you stay with a product long enough to see your decisions play out. From shaping the strategy to shipping changes, studying their impact, and deciding what to do next, FreeBinge taught me to think in cycles not isolated features.",
     stats: [
-      { value: "1,000+", label: "Users Analyzed" },
-      { value: "10+", label: "Products Benchmarked" },
-      { value: "3+", label: "Countries Studied" },
+      { value: "40K+", label: "MAU" },
+      { value: "3×", label: "Retention" },
+      { value: "2×", label: "Revenue" },
     ],
     fullStory:
       "At ZBULLET, I got my first opportunity to truly own a product end-to-end. Working on FreeBinge meant looking at the product from multiple angles at once, how users discover content, what makes them keep watching, what brings them back, and where the product can create more value. I started by digging into user behavior and content performance. Looking at show level engagement, watch time, open rates, and completion rates helped me understand not just what users were watching, but how different parts of the experience influenced their behavior. One of the biggest opportunities I found was around repeat consumption. I analyzed more than 1,000 users and used those insights to shape a new reward structure designed to encourage users to come back and watch more. At the same time, I looked beyond FreeBinge itself, benchmarking products, studying competitors, and evaluating experiences across 10+ products in 3+ countries to understand what others were doing differently. What changed for me was the nature of the questions I was asking. Earlier, I was learning to understand people. Then I learned to identify patterns. At FreeBinge, I had to turn those patterns into decisions. ZBULLET taught me that product ownership isn't just about finding what could be better. It's about deciding what to do about it and understanding why.",
