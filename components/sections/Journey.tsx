@@ -23,7 +23,7 @@ interface Entry {
 
 function StatChip({ value, label }: Stat) {
   return (
-    <div className="border border-divider px-4 py-3 flex-shrink-0">
+    <div className="border border-divider px-4 py-3 flex-shrink-0 min-w-[128px]">
       <p
         className="font-serif text-ink text-[18px] leading-none mb-[5px]"
         style={{ fontWeight: 400 }}
