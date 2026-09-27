@@ -97,8 +97,8 @@ export function CaseStudies() {
                 SubTrack
               </h3>
               <div className="flex flex-wrap gap-3">
-                <PillLink href="#" label="View Live Demo" />
-                <PillLink href="#" label="Read Full Case Study" external />
+                <PillLink href="https://subtrack-phi-mocha.vercel.app/" label="View Live Demo" external />
+                <PillLink href="https://app.notion.com/p/Subtrack-Helping-Users-Discover-and-Manage-Subscriptions-3969267ee47680859c8dd9c60b06687b" label="Read Full Case Study" external />
               </div>
             </div>
 
@@ -178,8 +178,8 @@ export function CaseStudies() {
                 Tailor Made
               </h3>
               <div className="flex flex-wrap gap-3">
-                <PillLink href="#" label="View Live Demo" />
-                <PillLink href="#" label="Read Full Case Study" external />
+                <PillLink href="https://tailormaderesume.lovable.app" label="View Live Demo" external />
+                <PillLink href="https://app.notion.com/p/Tailor-Made-Resume-Builder-3499267ee476808ca864fe06b51e6bb5" label="Read Full Case Study" external />
               </div>
             </div>
 

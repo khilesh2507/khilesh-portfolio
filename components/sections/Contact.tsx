@@ -49,7 +49,9 @@ export function Contact() {
           <div className="flex flex-wrap gap-3">
             {/* Solid — View Resume */}
             <a
-              href="#"
+              href="https://drive.google.com/file/d/13i_6DKjrVMeeV-bQwTbA6ewwY2WU3Ncr/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-6 py-[11px] font-sans text-[11px] tracking-[0.14em] uppercase hover:opacity-70 transition-opacity duration-300"
               style={{
                 fontWeight: 400,
@@ -62,7 +64,7 @@ export function Contact() {
 
             {/* Outlined — Email */}
             <a
-              href="mailto:hello@khilesh.design"
+              href="mailto:Khilesh2507@gmail.com"
               className="border border-ink text-ink px-6 py-[11px] font-sans text-[11px] tracking-[0.14em] uppercase hover:opacity-50 transition-opacity duration-300"
               style={{ fontWeight: 400 }}
             >
@@ -71,7 +73,7 @@ export function Contact() {
 
             {/* Outlined — LinkedIn */}
             <a
-              href="#"
+              href="https://www.linkedin.com/in/khileshmukhija"
               target="_blank"
               rel="noopener noreferrer"
               className="border border-ink text-ink px-6 py-[11px] font-sans text-[11px] tracking-[0.14em] uppercase hover:opacity-50 transition-opacity duration-300"
