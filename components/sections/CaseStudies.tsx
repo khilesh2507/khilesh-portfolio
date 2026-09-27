@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { SectionWrapper } from "@/components/SectionWrapper";
 import { SectionLabel } from "@/components/SectionLabel";
 
@@ -33,33 +34,18 @@ function PillLink({
   );
 }
 
-function ImagePlaceholder({
-  label,
-  aspectClass = "aspect-[4/3]",
-}: {
-  label: string;
-  aspectClass?: string;
-}) {
+function ProjectImage({ src, alt, caption }: { src: string; alt: string; caption: string }) {
   return (
-    <div
-      className={`relative w-full overflow-hidden ${aspectClass}`}
-      style={{ backgroundColor: "#ECEAE5" }}
-      aria-label={label}
-    >
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-        <div className="relative w-6 h-6">
-          <div className="absolute left-1/2 top-0 bottom-0 w-px -translate-x-1/2 bg-divider" />
-          <div className="absolute top-1/2 left-0 right-0 h-px -translate-y-1/2 bg-divider" />
-        </div>
+    <div>
+      <div className="relative w-full aspect-[16/9] overflow-hidden">
+        <Image src={src} alt={alt} fill style={{ objectFit: "cover" }} sizes="(max-width: 768px) 100vw, 90vw" />
       </div>
-      <div className="absolute bottom-4 left-4">
-        <p
-          className="font-sans text-faint text-[10px] tracking-[0.14em] uppercase"
-          style={{ fontWeight: 400 }}
-        >
-          {label}
-        </p>
-      </div>
+      <p
+        className="font-sans text-faint text-[10px] tracking-[0.14em] uppercase mt-3"
+        style={{ fontWeight: 400 }}
+      >
+        {caption}
+      </p>
     </div>
   );
 }
@@ -73,20 +59,18 @@ export function CaseStudies() {
 
         {/* Section header */}
         <SectionWrapper>
-          <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-20 gap-6">
-            <div>
-              <SectionLabel number="03" label="Case Studies" />
-              <h2
-                className="font-serif text-ink leading-[1.15] tracking-[-0.01em]"
-                style={{ fontWeight: 300, fontSize: "clamp(2rem, 4vw, 3.25rem)" }}
-              >
-                Selected work,
-                <br />
-                <em style={{ fontStyle: "italic" }}>examined closely.</em>
-              </h2>
-            </div>
+          <div className="mb-20 md:mb-28">
+            <SectionLabel number="03" label="Case Studies" />
+            <h2
+              className="font-serif text-ink leading-[1.15] tracking-[-0.01em]"
+              style={{ fontWeight: 300, fontSize: "clamp(2rem, 4vw, 3.25rem)" }}
+            >
+              Selected work,
+              <br />
+              <em style={{ fontStyle: "italic" }}>examined closely.</em>
+            </h2>
             <p
-              className="font-sans text-muted text-sm md:text-base leading-relaxed max-w-xs md:text-right"
+              className="font-sans text-muted text-sm md:text-base leading-relaxed max-w-xs mt-6"
               style={{ fontWeight: 300 }}
             >
               A curated set of projects representing different problem spaces
@@ -167,9 +151,10 @@ export function CaseStudies() {
               </div>
             </div>
 
-            <ImagePlaceholder
-              label="SubTrack — App screenshot"
-              aspectClass="aspect-[16/9]"
+            <ProjectImage
+              src="/subtrack-screenshot.png"
+              alt="SubTrack app — landing page"
+              caption="SubTrack — Landing Page"
             />
 
           </div>
@@ -248,9 +233,10 @@ export function CaseStudies() {
               </div>
             </div>
 
-            <ImagePlaceholder
-              label="Tailor Made — App screenshot"
-              aspectClass="aspect-[16/9]"
+            <ProjectImage
+              src="/tailormade-screenshot.png"
+              alt="Tailor Made app — interface"
+              caption="Tailor Made — App Interface"
             />
 
           </div>

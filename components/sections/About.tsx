@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { SectionWrapper } from "@/components/SectionWrapper";
 import { SectionLabel } from "@/components/SectionLabel";
 
@@ -37,37 +38,22 @@ export function About() {
           </blockquote>
         </SectionWrapper>
 
-        {/*
-          Two-column grid — no items-start so the left column stretches
-          to match the right column's height, which allows sticky to work.
-        */}
         <div className="grid md:grid-cols-[260px_1fr] gap-12 md:gap-16 lg:gap-20">
 
-          {/* Portrait — sticky on desktop so it pins while beats scroll past */}
+          {/* Portrait */}
           <SectionWrapper delay={0.12} className="md:sticky md:top-28 md:self-start">
-            <div
-              className="relative w-full aspect-[3/4] overflow-hidden"
-              style={{ backgroundColor: "#ECEAE5" }}
-              aria-label="Portrait photo — placeholder"
-            >
-              <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                <div className="relative w-6 h-6">
-                  <div className="absolute left-1/2 top-0 bottom-0 w-px -translate-x-1/2 bg-divider" />
-                  <div className="absolute top-1/2 left-0 right-0 h-px -translate-y-1/2 bg-divider" />
-                </div>
-              </div>
-              <div className="absolute bottom-4 left-4">
-                <p
-                  className="font-sans text-faint text-[10px] tracking-[0.14em] uppercase"
-                  style={{ fontWeight: 400 }}
-                >
-                  Khilesh Mukhija
-                </p>
-              </div>
+            <div className="relative w-full aspect-[3/4] overflow-hidden">
+              <Image
+                src="/khilesh-portrait.png"
+                alt="Khilesh Mukhija"
+                fill
+                style={{ objectFit: "cover" }}
+                sizes="(max-width: 768px) 100vw, 260px"
+              />
             </div>
           </SectionWrapper>
 
-          {/* Right column — three beats, each with its own scroll animation */}
+          {/* Three beats */}
           <div>
 
             {/* Beat 1 — The Start */}
