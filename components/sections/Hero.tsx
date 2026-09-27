@@ -29,8 +29,7 @@ export function Hero() {
               fontSize: "clamp(3.75rem, 8vw, 8.5rem)",
             }}
           >
-            Khilesh{" "}
-            <em style={{ fontStyle: "italic" }}>Mukhija</em>
+            Khilesh Mukhija
           </h1>
 
           {/* Divider rule + tagline + metadata */}
